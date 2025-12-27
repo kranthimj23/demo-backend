@@ -1,0 +1,25 @@
+env:
+  demo_backend:
+  - name: DATABASE_URL
+    value: http://demo-database:8080
+  - name: APP_NAME
+    value: Demo Backend
+  - name: ENVIRONMENT
+    value: dev
+image:
+  imageName: us-central1-docker.pkg.dev/mobile-app-1-482109/demo-backend/backend:1-dev
+  pullPolicy: IfNotPresent
+  repository: us-central1-docker.pkg.dev/mobile-app-1-482109/demo-backend/backend
+  tag: 1-dev
+replicaCount: 1
+resources:
+  limits:
+    cpu: 100m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 256Mi
+service:
+  port: 8080
+  type: ClusterIP
+serviceName: demo-backend
