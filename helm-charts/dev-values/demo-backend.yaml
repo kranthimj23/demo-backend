@@ -7,10 +7,10 @@ env:
   - name: ENVIRONMENT
     value: dev
 image:
-  imageName: asia-south1-docker.pkg.dev/cloudlearnhub-gke-1546/demo-backend/backend:9-dev
+  imageName: asia-south1-docker.pkg.dev/cloudlearnhub-gke-1546/demo-backend/backend:10-dev
   pullPolicy: IfNotPresent
   repository: asia-south1-docker.pkg.dev/cloudlearnhub-gke-1546/demo-backend/backend
-  tag: 9-dev
+  tag: 10-dev
 replicaCount: 1
 resources:
   limits:
