@@ -6,6 +6,8 @@ env:
     value: Demo Backend
   - name: ENVIRONMENT
     value: dev
+  - name: CLUSTER_INFO
+    value: debug_level
 image:
   imageName: asia-south1-docker.pkg.dev/cloudlearnhub-gke-1546/demo-backend/backend:10-dev
   pullPolicy: IfNotPresent
