@@ -11,10 +11,10 @@ env:
   - name: HOME
     value: home
 image:
-  imageName: asia-south1-docker.pkg.dev/cloudlearnhub-gke-1546/demo-backend/backend:10-dev
+  imageName: asia-south1-docker.pkg.dev/cloudlearnhub-gke-1546/demo-backend/backend:11-dev
   pullPolicy: IfNotPresent
   repository: asia-south1-docker.pkg.dev/cloudlearnhub-gke-1546/demo-backend/backend
-  tag: 10-dev
+  tag: 11-dev
 replicaCount: 1
 resources:
   limits:
