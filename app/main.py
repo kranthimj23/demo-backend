@@ -145,4 +145,5 @@ def write():
     return jsonify({"msg": "Data written to Demo-Backend"})
 
 if __name__ == '__main__':
+    print("hi hello")
     app.run(host='0.0.0.0', port=8080)
